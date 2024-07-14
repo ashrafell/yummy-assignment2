@@ -1,0 +1,493 @@
+body {
+    background-color: #000000;
+
+}
+
+
+.meals {
+    position: relative;
+    cursor: pointer;
+
+    .dMeals {
+        img {
+            width: 100%;
+
+        }
+
+        .col-md-3 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: -1;
+            height: 100%;
+            width: 91.8%;
+            background-color: #fffdfcb0;
+            z-index: 1;
+            transition: all 1s !important;
+
+            h3 {
+                margin-top: 100px !important;
+            }
+
+        }
+
+        .col-md-3:hover .overlay {
+            top: 0;
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-top: 200px !important;
+
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#nav-bar {
+
+
+
+    .navBar {
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        z-index: 999;
+
+        .nav {
+            background-color: #111111;
+            width: 250px;
+            height: 100vh;
+
+            .nav-footer {
+                i {
+                    color: white;
+                    cursor: pointer;
+                }
+
+                .footer {
+                    color: white;
+
+                }
+            }
+
+
+        }
+
+
+        .open {
+            background-color: white;
+            width: 65px;
+            height: 100vh;
+            z-index: 999;
+
+            .openNav {
+                color: #000000;
+                font-size: 40px;
+                font-weight: 700;
+                transition: all .5s;
+            }
+
+            .openNav:hover {
+                color: #FCCA10;
+            }
+
+            img {
+                width: 80%;
+            }
+
+            .icon {
+                margin-top: 200px;
+            }
+
+            .web {
+                margin-top: 200px;
+            }
+
+            i {
+                cursor: pointer;
+                transition: all .5s;
+            }
+
+            i:hover {
+                color: #FCCA10;
+            }
+        }
+
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            transition: all .5s;
+        }
+
+        a:hover {
+            color: #FCCA10;
+        }
+
+        .closeBtn {
+            font-size: 40px;
+            transition: all .5s;
+            color: rgb(255, 255, 255);
+            margin-left: 200px;
+        }
+
+        .closeBtn:hover {
+            color: #FCCA10;
+        }
+
+        span {
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .active {
+            color: #FCCA10 !important;
+        }
+
+    }
+}
+
+
+
+
+#meal {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 105px;
+
+    #closeIcon {
+        color: white;
+        z-index: 3;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+
+
+    .col-md-4 {
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 35px;
+            color: white;
+        }
+    }
+
+
+    .col-md-8 {
+        h3 {
+            color: white;
+            font-size: 32px;
+        }
+
+        p {
+            color: white;
+        }
+
+    }
+}
+
+
+
+#search {
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+
+
+    input {
+        background-color: #000000;
+    }
+
+    input::placeholder {
+        color: rgb(109, 104, 104);
+    }
+
+}
+
+
+
+
+
+.category {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 70px;
+
+    .dCategory {
+        img {
+            width: 100%;
+
+        }
+
+        .col-md-3 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay2 {
+            position: absolute;
+            bottom: -1;
+            height: 100%;
+            width: 91.8%;
+            background-color: #fffdfcb0;
+            z-index: 1;
+            transition: all 1s !important;
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+
+        }
+
+        .col-md-3:hover .overlay2 {
+            top: 0;
+        }
+
+
+    }
+
+
+
+}
+
+
+
+.fByCategory {
+    position: relative;
+    cursor: pointer;
+
+    .fdCategory {
+        img {
+            width: 100%;
+
+        }
+
+        .col-md-3 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay3 {
+            position: absolute;
+            bottom: -1;
+            height: 100%;
+            width: 91.8%;
+            background-color: #fffdfcb0;
+            z-index: 1;
+            transition: all 1s !important;
+
+            h3 {
+                margin-top: 100px !important;
+            }
+
+        }
+
+        .col-md-3:hover .overlay3 {
+            top: 0;
+        }
+
+
+    }
+
+}
+
+
+
+#area {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 70px;
+    cursor: pointer;
+
+    .dArea {
+        img {
+            width: 100%;
+
+        }
+
+    }
+
+    .item4 {
+        i {
+            color: white;
+            margin-left: 90px;
+        }
+
+        h3 {
+            color: white;
+        }
+    }
+
+}
+
+
+
+#areaMeals {
+    position: relative;
+    cursor: pointer;
+
+    .dAreaMeals {
+        img {
+            width: 100%;
+
+        }
+
+        .col-md-3 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay4 {
+            position: absolute;
+            bottom: -1;
+            height: 100%;
+            width: 91.8%;
+            background-color: #fffdfcb0;
+            z-index: 1;
+            transition: all 1s !important;
+
+            h3 {
+                margin-top: 100px !important;
+            }
+
+        }
+
+        .col-md-3:hover .overlay4 {
+            top: 0;
+        }
+
+
+    }
+
+}
+
+
+
+#Ingredients {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 70px;
+    cursor: pointer;
+
+    .dIngredients {
+        img {
+            width: 100%;
+
+        }
+
+    }
+
+    .item6 {
+        overflow: hidden;
+
+        i {
+            color: white;
+            margin-left: 90px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            height: 75px;
+        }
+    }
+
+}
+
+
+#IngredientsMeals {
+    position: relative;
+    cursor: pointer;
+
+    .dIngredientsMeals {
+        img {
+            width: 100%;
+
+        }
+
+        .col-md-3 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay5 {
+            position: absolute;
+            bottom: -1;
+            height: 100%;
+            width: 91.8%;
+            background-color: #fffdfcb0;
+            z-index: 1;
+            transition: all 1s !important;
+
+            h3 {
+                margin-top: 100px !important;
+            }
+
+        }
+
+        .col-md-3:hover .overlay5 {
+            top: 0;
+        }
+
+
+    }
+
+}
